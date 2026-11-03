@@ -1,0 +1,468 @@
+========================================================
+        DAA PRACTICALS - JAVA RUNNING GUIDE
+========================================================
+
+PROJECT LOCATION:
+C:\LP III
+
+PACKAGE NAME:
+DAA
+
+SOURCE FOLDER:
+C:\LP III\src\DAA
+
+
+========================================================
+STEP 1: OPEN PROJECT IN VS CODE
+========================================================
+
+1. Press Windows + R.
+2. Type powershell and press Enter.
+3. Enter the following command:
+
+   cd "C:\LP III"
+
+4. Open the project in VS Code:
+
+   code .
+
+5. Wait for VS Code to open the project.
+
+
+========================================================
+STEP 2: CHECK JAVA INSTALLATION
+========================================================
+
+Open VS Code Terminal:
+
+Shortcut: Ctrl + `
+
+Select PowerShell if required.
+
+Check Java version:
+
+   java -version
+
+Check Java compiler:
+
+   javac -version
+
+If both commands show versions, Java is ready.
+
+
+========================================================
+STEP 3: CHECK PROJECT FOLDER STRUCTURE
+========================================================
+
+Your project should have this structure:
+
+C:\LP III
+    |
+    |--- src
+    |     |
+    |     |--- DAA
+    |           |
+    |           |--- Fibonacci.java
+    |           |--- FractionalKnapsack.java
+    |           |--- Knapsack.java
+    |           |--- QuickSort.java
+    |           |--- HuffmanCoding.java
+    |
+    |--- bin
+
+IMPORTANT:
+All five Java files must be inside src\DAA.
+
+Every Java file must start with:
+
+   package DAA;
+
+
+========================================================
+STEP 4: CREATE BIN FOLDER
+========================================================
+
+In VS Code Terminal, enter:
+
+   cd "C:\LP III"
+
+Create the bin folder:
+
+   mkdir bin
+
+NOTE:
+If the bin folder already exists, no problem.
+
+
+========================================================
+STEP 5: RUN PRACTICAL 1 - FIBONACCI SERIES
+========================================================
+
+FILE NAME:
+Fibonacci.java
+
+CLASS NAME:
+Fibonacci
+
+STEP 1: Open Fibonacci.java in VS Code.
+
+STEP 2: Check that the first line is:
+
+   package DAA;
+
+STEP 3: Save the file using Ctrl + S.
+
+STEP 4: Compile the program:
+
+   javac -d bin src\DAA\Fibonacci.java
+
+STEP 5: Run the program:
+
+   java -cp bin DAA.Fibonacci
+
+STEP 6: Enter the required number of terms.
+
+Example Output:
+
+   0 1 1 2 3 5 8
+
+
+========================================================
+STEP 6: RUN PRACTICAL 2 - FRACTIONAL KNAPSACK
+========================================================
+
+FILE NAME:
+FractionalKnapsack.java
+
+CLASS NAME:
+FractionalKnapsack
+
+STEP 1: Open FractionalKnapsack.java.
+
+STEP 2: Check package declaration:
+
+   package DAA;
+
+STEP 3: Save the file using Ctrl + S.
+
+STEP 4: Compile:
+
+   javac -d bin src\DAA\FractionalKnapsack.java
+
+STEP 5: Run:
+
+   java -cp bin DAA.FractionalKnapsack
+
+STEP 6: Enter item weights, profits and capacity.
+
+Example:
+
+   Weights = 10, 20, 30
+   Profits = 60, 100, 120
+   Capacity = 50
+
+Expected Maximum Profit:
+
+   240
+
+
+========================================================
+STEP 7: RUN PRACTICAL 3 - 0/1 KNAPSACK
+========================================================
+
+FILE NAME:
+Knapsack.java
+
+CLASS NAME:
+Knapsack
+
+STEP 1: Open Knapsack.java.
+
+STEP 2: Check package declaration:
+
+   package DAA;
+
+STEP 3: Save the file using Ctrl + S.
+
+STEP 4: Compile:
+
+   javac -d bin src\DAA\Knapsack.java
+
+STEP 5: Run:
+
+   java -cp bin DAA.Knapsack
+
+STEP 6: Enter item weights, profits and capacity.
+
+Example:
+
+   Weights = 10, 20, 30
+   Profits = 60, 100, 120
+   Capacity = 50
+
+Expected Maximum Profit:
+
+   220
+
+
+========================================================
+STEP 8: RUN PRACTICAL 4 - QUICK SORT
+========================================================
+
+FILE NAME:
+QuickSort.java
+
+CLASS NAME:
+QuickSort
+
+STEP 1: Open QuickSort.java.
+
+STEP 2: Check package declaration:
+
+   package DAA;
+
+STEP 3: Save the file using Ctrl + S.
+
+STEP 4: Compile:
+
+   javac -d bin src\DAA\QuickSort.java
+
+STEP 5: Run:
+
+   java -cp bin DAA.QuickSort
+
+Expected Output:
+
+   Original Array:
+   45 20 10 60 30 80 50
+
+   Deterministic Quick Sort:
+   10 20 30 45 50 60 80
+
+   Randomized Quick Sort:
+   10 20 30 45 50 60 80
+
+
+========================================================
+STEP 9: RUN PRACTICAL 5 - HUFFMAN ENCODING
+========================================================
+
+FILE NAME:
+HuffmanCoding.java
+
+CLASS NAME:
+HuffmanCoding
+
+STEP 1: Open HuffmanCoding.java.
+
+STEP 2: Check package declaration:
+
+   package DAA;
+
+STEP 3: Save the file using Ctrl + S.
+
+STEP 4: Compile:
+
+   javac -d bin src\DAA\HuffmanCoding.java
+
+STEP 5: Run:
+
+   java -cp bin DAA.HuffmanCoding
+
+STEP 6: Enter number of characters:
+
+   6
+
+STEP 7: Enter characters and frequencies:
+
+   A 5
+   B 9
+   C 12
+   D 13
+   E 16
+   F 45
+
+Expected Huffman Codes (may vary):
+
+   F : 0
+   C : 100
+   D : 101
+   A : 1100
+   B : 1101
+   E : 111
+
+
+========================================================
+STEP 10: RUN DIRECTLY FROM VS CODE
+========================================================
+
+1. Open the required Java file.
+2. Find the main() method.
+3. Click the Run button (▶) above main().
+4. Select Run Java if prompted.
+5. Enter input in the Terminal if required.
+
+Shortcut:
+
+   Ctrl + F5
+
+This runs the program without debugging.
+
+
+========================================================
+STEP 11: USEFUL JAVA COMMANDS
+========================================================
+
+Check Java version:
+
+   java -version
+
+Check Java compiler:
+
+   javac -version
+
+Move to project folder:
+
+   cd "C:\LP III"
+
+Create bin folder:
+
+   mkdir bin
+
+Compile a Java file:
+
+   javac -d bin src\DAA\FileName.java
+
+Run a Java class:
+
+   java -cp bin DAA.ClassName
+
+Clear terminal:
+
+   cls
+
+Find a Java file:
+
+   Get-ChildItem -Path "C:\LP III" -Filter FileName.java -Recurse
+
+
+========================================================
+STEP 12: COMMON ERRORS AND SOLUTIONS
+========================================================
+
+ERROR 1: FILE NOT FOUND
+
+Reason:
+You are in the wrong directory or the file path is incorrect.
+
+Solution:
+
+   cd "C:\LP III"
+
+Then compile using:
+
+   javac -d bin src\DAA\Fibonacci.java
+
+
+ERROR 2: COULD NOT FIND OR LOAD MAIN CLASS
+
+Reason:
+Wrong package name or class name, or incorrect classpath.
+
+Solution:
+
+1. Check package name:
+
+   package DAA;
+
+2. Check public class name.
+3. Compile again.
+4. Run using:
+
+   java -cp bin DAA.Fibonacci
+
+
+ERROR 3: JAVA COMPILER NOT FOUND
+
+Reason:
+JDK is not installed or PATH is not configured.
+
+Solution:
+Check JDK installation and PATH configuration.
+
+Run:
+
+   javac -version
+
+
+ERROR 4: CLASS NAME DOES NOT MATCH FILE NAME
+
+Example:
+
+File name: Fibonacci.java
+Class name: Fibonacci
+
+Both names must match exactly.
+
+
+ERROR 5: CHANGES NOT REFLECTED
+
+Reason:
+You modified the program but did not compile it again.
+
+Solution:
+
+   javac -d bin src\DAA\Fibonacci.java
+   java -cp bin DAA.Fibonacci
+
+
+========================================================
+IMPORTANT: REMEMBER THIS COMMAND FORMAT
+========================================================
+
+FIRST: COMPILE
+
+   javac -d bin src\DAA\FileName.java
+
+SECOND: RUN
+
+   java -cp bin DAA.ClassName
+
+
+========================================================
+QUICK REVISION - ALL FIVE PRACTICALS
+========================================================
+
+1. FIBONACCI
+
+   javac -d bin src\DAA\Fibonacci.java
+   java -cp bin DAA.Fibonacci
+
+
+2. FRACTIONAL KNAPSACK
+
+   javac -d bin src\DAA\FractionalKnapsack.java
+   java -cp bin DAA.FractionalKnapsack
+
+
+3. 0/1 KNAPSACK
+
+   javac -d bin src\DAA\Knapsack.java
+   java -cp bin DAA.Knapsack
+
+
+4. QUICK SORT
+
+   javac -d bin src\DAA\QuickSort.java
+   java -cp bin DAA.QuickSort
+
+
+5. HUFFMAN ENCODING
+
+   javac -d bin src\DAA\HuffmanCoding.java
+   java -cp bin DAA.HuffmanCoding
+
+
+========================================================
+                 END OF GUIDE
+========================================================
